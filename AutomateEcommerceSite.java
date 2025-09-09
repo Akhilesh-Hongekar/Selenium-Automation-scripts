@@ -33,7 +33,7 @@ public class AutomateEcommerceSite {
 		//Validating product results are displayed
 		WebElement product = driver.findElement(By.className("inventory_item"));
 		Assert.assertTrue(product.isDisplayed(), "Error");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		//Add to cart
 		driver.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket")).click();
@@ -47,3 +47,4 @@ public class AutomateEcommerceSite {
 	}
 
 }
+
